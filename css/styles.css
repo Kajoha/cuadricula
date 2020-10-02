@@ -1,8 +1,27 @@
 body {
-    width: 300px;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0 auto;
-    transform: translateY(+50%);
-    align-items: center;
+  margin: 0 auto;
+  transform: translateY(+50%);
   }
+
+.cuadricula {
+  width: 301px;
+  height: 215px;
+  margin: 0.5em;
+  }
+
+.cuadricula div {
+  float: left;
+  width: 43px;
+  height: 43px;
+  background-color: #fff;
+}
+
+.cuadricula div:nth-child(2n+1), 
+.cuadricula div:nth-child(8) ~ div:nth-child(2n+1), 
+.cuadricula div:nth-child(15) ~ div:nth-child(2n+1), 
+.cuadricula div:nth-child(22) ~ div:nth-child(2n+1), 
+.cuadricula div:nth-child(29) ~ div:nth-child(2n+1)
+
+{
+    background-color: #000;
+}
